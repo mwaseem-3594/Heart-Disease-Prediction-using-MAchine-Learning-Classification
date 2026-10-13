@@ -11,7 +11,7 @@ st.write("Input patient clinical descriptors below to evaluate the probability/r
 # Load the saved model and scaler assets safely
 @st.cache_resource
 def load_assets():
-    with open('heart_model_assets.pkl', 'rb') as f:
+    with open('heart_disease_prediction_model.pkl', 'rb') as f:
         data = pickle.load(f)
     return data
 
